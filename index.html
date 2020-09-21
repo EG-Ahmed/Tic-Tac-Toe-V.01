@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/iconmonstr-iconic-font.css" />
+    <link
+      rel="shortcut icon"
+      href="images/ICONS/tic-tac-toe.png"
+      type="image/x-icon"
+    />
+    <title>Tic Tac Toe</title>
+  </head>
+
+  <body>
+    <h1 class="turn">Player's turn: X</h1>
+    <div class="flex-container flex-column">
+      <div
+        class="flex-grid flex-container"
+        id="board"
+        data-mark="iconmonstr-x-mark-2-48.png"
+      >
+        <div class="box" data-position="top-left"></div>
+        <div class="box" data-position="top-mid"></div>
+        <div class="box" data-position="top-right"></div>
+        <div class="box" data-position="mid-left"></div>
+        <div class="box" data-position="mid-mid"></div>
+        <div class="box" data-position="mid-right"></div>
+        <div class="box" data-position="bottom-left"></div>
+        <div class="box" data-position="bottom-mid"></div>
+        <div class="box" data-position="bottom-right"></div>
+      </div>
+
+      <a href="" class="btn-reset" onclick="return false">reset</a>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

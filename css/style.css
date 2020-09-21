@@ -1,0 +1,125 @@
+:root {
+  --color-primary-light: #e4e3e3;
+  --color-primary-dark: #b6c1c2;
+  --color-secondary-light: #3b6978;
+  --color-secondary-dark: #1e4153;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  padding: 2rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(4, 235, 4, 0.664),
+    rgb(1, 112, 1)
+  );
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin: 0 auto 2rem;
+  text-transform: capitalize;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  /* height: 100%; */
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.flex-grid {
+  overflow: hidden;
+  flex-wrap: wrap;
+  width: 46vw;
+  height: 72vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(237, 240, 237, 0.664),
+    rgb(229, 231, 229)
+  );
+}
+
+[class*='box'] {
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.63);
+  height: 33.3%;
+  width: 33.3%;
+  transition: all 0.2s;
+  /* border-collapse: collapse; */
+}
+
+.lock {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.01px solid rgba(0, 0, 0, 0.63);
+  cursor: default;
+  background-color: rgba(119, 187, 63, 0.658);
+  /* border-collapse: collapse; */
+}
+
+.playing .box:hover {
+  background-color: rgb(181, 240, 71);
+}
+
+.btn-reset:link,
+.btn-reset:active,
+.btn-reset:focus,
+.btn-reset:visited {
+  text-decoration: none;
+  margin-top: 3rem;
+  display: block;
+  width: 15rem;
+  height: 5rem;
+  padding: 1rem 2rem;
+  line-height: 1.5;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.btn-reset:hover {
+  background-color: rgb(115, 128, 0);
+  color: rgb(255, 255, 255);
+}
+
+.icon {
+  font-size: 10rem !important;
+  color: #ffffff;
+}
+
+.winner {
+  background-color: #11c711;
+}
+
+.winner i::before {
+  color: white;
+}

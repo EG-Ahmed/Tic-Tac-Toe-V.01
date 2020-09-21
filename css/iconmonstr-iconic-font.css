@@ -1,0 +1,26 @@
+/*!
+ * iconmonstr iconic font v1.3.0
+ * Created by Alexander Kahlkopf - http://iconmonstr.com - @iconmonstr
+ * License - http://iconmonstr.com/license
+ */
+@font-face {
+  font-family: 'iconmonstr-iconic-font';
+  src: url('fonts/iconmonstr-iconic-font.woff2?v=1.3.0') format('woff2'),
+    url('../fonts/iconmonstr-iconic-font.woff?v=1.3.0') format('woff'),
+    url('../fonts/iconmonstr-iconic-font.ttf?v=1.3.0') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.im {
+  display: inline-block;
+  font: normal normal normal 24px/1 'iconmonstr-iconic-font';
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.im-circle-o:before {
+  content: '\e02b';
+}
+.im-x-mark:before {
+  content: '\e08c';
+}
